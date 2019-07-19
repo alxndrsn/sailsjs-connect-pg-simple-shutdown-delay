@@ -11,6 +11,9 @@
 
 module.exports.session = {
 
+  adapter: 'connect-pg-simple',
+  conString: process.env.DATABASE_URL,
+
   /***************************************************************************
   *                                                                          *
   * Session secret is automatically generated when your new app is created   *
